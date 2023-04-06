@@ -19,6 +19,7 @@ serde_json = "1"
 tracing = { version = "0.1", features = ["log"] }
 tracing-futures = "0.2"
 symphonia-core = "0.5"
+serenity = { git = "https://github.com/dutchaen/serenity", rev = "b8f53e5", features = ["voice", "gateway"] }
 
 [dependencies.async-trait]
 optional = true
@@ -66,12 +67,6 @@ version = "1"
 [dependencies.rand]
 optional = true
 version = "0.8"
-
-[dependencies.serenity]
-optional = true
-version = "0.11"
-default-features = false
-features = ["voice", "gateway"]
 
 [dependencies.serenity-voice-model]
 optional = true
